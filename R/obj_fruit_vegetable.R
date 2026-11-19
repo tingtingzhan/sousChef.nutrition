@@ -54,14 +54,15 @@ Kirkland_strawberry <- \() nutrition(
     '100273803' # frequently seen in store
     # '11273181' # rarely seen in store
   ),
-  alias = '\u8349\u8393', name = 'Strawberry\U1f353',
+  name = 'Strawberry\U1f353',
   servingGram = 140, servingCup = 1, 
   calorie = 50, 
   carbohydrate = 13, sugar = 6)
 
 Kirkland_yellowCorn <- \() nutrition(
   url = 'https://costcofdb.com/product/kirkland-signature-organic-yellow-sweet-corn-5-lbs',
-  brand = 'Kirkland\U1f1fa\U1f1f8', alias = '\u51b7\u51bb\u751c\u7389\u7c73', name = 'Frozen Yellow Corn\U1f33d',
+  brand = 'Kirkland\U1f1fa\U1f1f8', 
+  name = 'Frozen Yellow Corn\U1f33d',
   servingGram = 90, 
   #servingCup = 2/3, # packaging
   servingCup = 90/128,# actual experiment 1cup = 128g
@@ -81,7 +82,7 @@ Kirkland_peach <- \() nutrition(
 
 UltraOrganics_mango <- \() nutrition(
   fdc = 169910L, # water 83.5%
-  brand = 'Ultra Organics', alias = '\u8292\u679c', name = 'Mango\U1f96d',
+  brand = 'Ultra Organics', name = 'Mango\U1f96d',
   costcoBiz = '100370260',
   servingGram = 140, 
   servingCup = 1, # puree density; confirm with experiment!!
@@ -95,14 +96,15 @@ UltraOrganics_mango <- \() nutrition(
 
 HappyVillage_strawberry <- \() nutrition(
   brand = 'Happy Village', 
-  alias = '\u8349\u8393', name = 'Strawberry\U1f353',
+  name = 'Strawberry\U1f353',
   url = 'www.instacart.com/products/25833270-happy-village-frozen-organic-strawberries-4-lb',
   servingGram = 140, servingCup = 1, 
   calorie = 50, sugar = 6, protein = 1)
 
 HappyVillage_darkCherry <- \() nutrition(
   costcoBiz = '100313436',
-  brand = 'Happy Village', alias = '\u751c\u6a31\u6843', name = 'Dark Cherry\U1f352',
+  brand = 'Happy Village', 
+  name = 'Dark Cherry\U1f352',
   servingGram = 140, servingCup = 1,
   calorie = 90,
   water = 140*240/310, # tested with bao()
@@ -187,7 +189,7 @@ Dole_sweetened_pineapple <- \() nutrition(
 
 DelMonte_pear <- \() nutrition(
   delmonte = 'fruits/pears/sliced-pears-no-sugar-added',
-  name = 'Sliced Pears\U1f350', alias = '\u68a8\u7f50\u5934',
+  name = 'Sliced Pears\U1f350',
   servingGram = 121, servingCup = 1/2,
   water = 121-10-1, # 121 * 240/255, # tested with bao()
   calorie = 40, 
@@ -197,7 +199,7 @@ DelMonte_pear <- \() nutrition(
 
 DelMonte_mandarine <- \() nutrition(
   delmonte = 'fruits/mandarin-oranges/mandarin-oranges-no-sugar-added',
-  name = 'Mandarin Oranges\U1f34a', alias = '\u6a58\u5b50\u7f50\u5934',
+  name = 'Mandarin Oranges\U1f34a', 
   servingGram = 123, servingCup = 1/2,
   water = 123-13-4-1, # 123 * 240/245, # tested with bao()
   calorie = 60, 
@@ -349,7 +351,7 @@ watermelon <- \() nutrition(
 Libbys_pumpkin <- \() nutrition(
   brand = 'https://www.nestleprofessional.us/libbys/libbys-100-pure-pumpkin-6-x-106-oz-cans' |> 
     style_hyperlink(text = 'Libby\'s\U1f1fa\U1f1f8', url = ),
-  name = 'Pumpkin\U1f383 Puree', alias = '\u5357\u74dc\u6ce5',
+  name = 'Pumpkin\U1f383 Puree',
   usd = 7.58/(3*822)*122, sams = '162878', date = as.Date('2026-10-07'), # early Fall, regular price
   # usd = 3.91/(3*822)*122, sams = '162878', date = as.Date('2023-12-24'), clearance?
   # Groupon's Sam's Club member is super cheap ($15) at Christmas! # 2023-12-24
@@ -380,7 +382,7 @@ Libbys_pumpkinPieMix <- \() nutrition(
 
 
 Wegmans_tomato <- \() nutrition(
-  name = 'Tomato\U1f345 Puree', alias = '\u897f\u7ea2\u67ff\u6ce5',
+  name = 'Tomato\U1f345 Puree', 
   wegmans = '45406',
   servingGram = 63, servingCup = 1/4,
   sodium = .02, sugar = 3, protein = 1, 
@@ -388,7 +390,7 @@ Wegmans_tomato <- \() nutrition(
 
 
 WegmansOrganic_tomato <- \() nutrition(
-  name = 'Tomato\U1f345 Puree', alias = '\u897f\u7ea2\u67ff\u6ce5',
+  name = 'Tomato\U1f345 Puree',
   wegmans = '45416', usd = 2.89/822*63,
   servingGram = 63, servingCup = 1/4, pieceGram = 822, piece_fmt = '%.1f\U1f96b', 
   calorie = 25,
