@@ -26,7 +26,7 @@ Edward_coconutShrd <- \() nutrition(
 
 Edward_coconutFlr <- \() nutrition(
   edwardandsons = 'lets-do-organic/products/lets-do-organic-coconut-flour',
-  alias = '\u6930\u8089\u7c89', name = 'Coconut\U1f965 Flour',
+  name = 'Coconut\U1f965 Flour',
   usd = 5.99/454*14,
   servingGram = 14, 
   servingTbsp = 2, # packaging
@@ -36,7 +36,7 @@ Edward_coconutFlr <- \() nutrition(
 
 BobsRedMill_coconutFlr <- \() nutrition(
   bobsredmill = 'organic-coconut-flour',
-  alias = '\u6930\u8089\u7c89', name = 'Coconut\U1f965 Flour',
+  name = 'Coconut\U1f965 Flour',
   servingGram = 14, 
   servingTbsp = 2, # packaging
   calorie = 60,
@@ -46,7 +46,7 @@ BobsRedMill_coconutFlr <- \() nutrition(
 AnthonysGoods_coconutFlr <- \() nutrition(
   url = 'anthonysgoods.com/products/anthonys-organic-coconut-flour-4lb',
   brand = 'Anthony\'s Goods', 
-  alias = '\u6930\u8089\u7c89', name = 'Coconut\U1f965 Flour',
+  name = 'Coconut\U1f965 Flour',
   usd = 18.99/1810*14,
   servingGram = 14,
   servingTbsp = 2, # packaging
@@ -56,7 +56,7 @@ AnthonysGoods_coconutFlr <- \() nutrition(
 
 WegmansOrganic_coconutFlr <- \() nutrition(
   wegmans = '52175', usd = 3.79/454*14,
-  name = 'Coconut\U1f965 Flour', alias = '\u6930\u8089\u7c89',
+  name = 'Coconut\U1f965 Flour',
   servingGram = 14, 
   #servingTbsp = 2, # packaging
   servingTbsp = 14/(66*2) * 16, # actual experiment: 66g = 1/2 cup

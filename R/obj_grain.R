@@ -16,7 +16,7 @@ Quaker_oat <- \() nutrition(
 
 HaiTai_blackRice <- \() nutrition(
   haitaiusa = 'black-rice-\ud751\ubbf8-2lbs', 
-  alias = '\u9ed1\u7c73', name = 'Black Rice',
+  name = 'Black Rice',
   servingGram = 45, servingCup = 1/4, 
   calorie = 160, usd = 6.99/910*45,
   fat = 2, carbohydrate = 33, sugar = 1, protein = 3)

@@ -20,7 +20,7 @@ SavannaOrchards_cashewAlmondPecanPistachio <- \() nutrition(
 
 Greenmax_blackSesame <- \() nutrition(
   brand = style_hyperlink(text = 'Greenmax\u99ac\u7389\u5c71\U1f1f9\U1f1fc', url = 'https://www.greenmax.com.tw/product_view.php?id=62772'),
-  alias = '\u9ed1\u829d\u9ebb\u7c89', name = 'Black Sesame Powder',
+  name = 'Black Sesame Powder',
   usd = 5.99/400*40,
   servingGram = 40, 
   pieceGram = 400, piece_fmt = '%.1f\U1fad9',
@@ -49,13 +49,13 @@ pecan <- \() nutrition(
 
 Kirkland_cashew <- \() nutrition(
   costco = '4000043019',
-  alias = '\u8170\u679c', name = 'Cashews', # unsalted
+  name = 'Cashews', # unsalted
   usd = 14.99/(2.5*454)*28,
   servingGram = 28, fat = 14, sugar = 2, protein = 5)
 
 Kirkland_organic_cashew <- \() nutrition(
   costco = '4000064056',
-  alias = '\u8170\u679c', name = 'Cashews, Organic', # unsalted unroasted
+  name = 'Cashews, Organic', # unsalted unroasted
   usd = 14.99/(2.5*454)*28,
   servingGram = 28, 
   calorie = 150,

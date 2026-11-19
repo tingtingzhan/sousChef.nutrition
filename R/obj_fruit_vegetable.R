@@ -231,8 +231,8 @@ Wegmans_peanutButter <- \() nutrition(
   carbohydrate = 8, sugar = 4, addedSugar = 2, protein = 7)
 
 
-Wegmans_beet_pulv <- \() nutrition(
-  alias = '\u751c\u83dc\u7c89', name = 'Beet Root Powder',
+Wegmans_beetPulv <- \() nutrition(
+  name = 'Beet Root Powder',
   wegmans = '60476', usd = 10.99/227*9.6,
   servingGram = 9.6, 
   # servingTbsp = 1, # packaging
@@ -240,17 +240,17 @@ Wegmans_beet_pulv <- \() nutrition(
   sodium = .06, sugar = 2, protein = 1)
 
 
-Wegmans_acai_pulv <- \() nutrition(
-  alias = '\u5df4\u897f\u8393\u7c89', name = 'A\u00e7a\u00ed Powder',
+Wegmans_acaiPulv <- \() nutrition(
+  name = 'A\u00e7a\u00ed Powder',
   wegmans = '60465', usd = 16.99/113*3,
   servingGram = 3, 
   servingTsp = 2 # packaging
 ) 
 
 
-Navitas_acai_pulv <- \() nutrition(
+Navitas_acaiPulv <- \() nutrition(
   navitas = 'acai-powder',
-  alias = '\u5df4\u897f\u8393\u7c89', name = 'A\u00e7a\u00ed Powder',
+  name = 'A\u00e7a\u00ed Powder',
   usd = 39.99*(1-.2)/227*3, # subscribe discount
   servingGram = 3,
   servingTsp = 1.5, # packaging
@@ -398,7 +398,7 @@ WegmansOrganic_tomato <- \() nutrition(
 
 Motts_applesauce <- \() nutrition(
   brand = style_hyperlink(text = 'Motts\U1f1fa\U1f1f8', url = 'https://www.motts.com/products/applesauce/no-sugar-added-apple-applesauce'),
-  name = 'Applesauce\U1f34e', alias = '\u82f9\u679c\u6ce5',
+  name = 'Applesauce\U1f34e',
   fdc = 1102646L, # water 88.22% 
   wegmans = '534880', #usd = 2.99/680*123,
   costco = '100449967', usd = 7.99/(1300*3)*123, date = as.Date('2026-10-01'),
@@ -442,7 +442,7 @@ Soymerica_soybean <- \() nutrition(
 
 Palouse_chickpea <- \() nutrition(
   fdc = 173756L,
-  alias = '\u9e70\u5634\u8c46', name = 'Chickpea', brand = 'Palouse\U1f1fa\U1f1f8',
+  name = 'Chickpea', brand = 'Palouse\U1f1fa\U1f1f8',
   url = 'www.palousebrand.com/products/garbanzo-beans-5-lb?variant=40131929407541',
   amazon = 'B001PEWJWC', usd = 18.95/(5*453.6)*(100-7.68),
   servingGram = 100 - 7.68, 
@@ -450,7 +450,7 @@ Palouse_chickpea <- \() nutrition(
 
 HaiTai_mungbean <- \() nutrition(
   fdc = 174256L,
-  name = 'Mung Bean', alias = '(\u5e26\u76ae)\u7eff\u8c46',
+  name = 'Mung Bean',
   haitaiusa = 'mung-bean-\ub179\ub450',
   usd = 5.99/910*38, yamibuy = '25775187',
   servingGram = 38, servingCup = 1/4, sodium = .006, carbohydrate = 24, sugar = 3, protein = 8, # package
@@ -461,7 +461,6 @@ HaiTai_mungbean <- \() nutrition(
 Khazana_mungDal <- \() nutrition(
   khazanathetreasure = 'khazana-organic-mung-dal-yellow',
   name = 'Mung Dal, Yellow',
-  alias = '(\u53bb\u76ae)\u7eff\u8c46',
   costcoBiz = '100312679',
   usd = 15.99/3180*100, date = as.Date('2026-10-20'), # in store price
   servingGram = 100, servingCup = 1/2,
@@ -473,7 +472,7 @@ Khazana_mungDal <- \() nutrition(
 
 HaiTai_adzukibean <- \() nutrition(
   fdc = 543753L,
-  name = 'Adzuki Bean', alias = '\u7ea2\u8c46', 
+  name = 'Adzuki Bean', 
   haitaiusa = 'red-bean-\ud325-4-lb',
   # servingGram = 100, fat = 1.54, protein = 6.92, sugar = 1.54, sodium = .262, # fdc
   usd = 8.99/907*45, yamibuy = '25775203',
@@ -483,7 +482,7 @@ HaiTai_adzukibean <- \() nutrition(
 
 Iberia_redkidneybean <- \() nutrition(
   fdc = 173744L,
-  alias = '\u7ea2\u82b8\u8c46', name = 'Red Kidney Bean\U1fad8', 
+  name = 'Red Kidney Bean\U1fad8', 
   brand = style_hyperlink(text = 'Iberia\U1f1fa\U1f1f8', url = 'https://iberiafoods.com/product/iberia-red-kidney-beans-4-lbs/'),
   amazon = 'B079S8D2YP', usd = 8.86/(4*454)*42,
   #servingGram = 100 - 11.8, protein = 22.5, fat = 1.06, sugar = 2.1, sodium = .012 # fdc
