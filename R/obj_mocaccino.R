@@ -63,7 +63,7 @@ Ghirardelli_white_frappe <- \() nutrition(
     # per 90g frappe mix, on box
     # x/2 to match pieceGram = 45
     water = c(ice = 200/2),
-    misc_floz = (
+    misc_floz = c(
       Wegmans_whole_milk = 5/2
     )
   ))
