@@ -22,7 +22,7 @@ Maxwell_mochaSuisse <- \() nutrition(
 
 
 
-Ghirardelli_mochaFrappe <- \() nutrition(
+Ghirardelli_mocha_frappe <- \() nutrition(
   amazon = 'B00D6Q9E3E',
   webstaurant = '40866211', usd = 9.29/454*45, date = as.Date('2026-10-23'),
   ghirardelli = 'iced-blended-beverages-information',
@@ -34,6 +34,39 @@ Ghirardelli_mochaFrappe <- \() nutrition(
 
 
 
+
+Ghirardelli_whiteMocha_frappe <- \() nutrition(
+  amazon = 'B07X524HV8', #usd = 0.85/28.35*45, date = as.Date('2026-11-21'),
+  webstaurant = '99966209', usd = 9.29/454*45, date = as.Date('2026-11-21'),
+  ghirardelli = 'iced-blended-beverages-information',
+  name = 'White Mocha Frapp\u00e9',
+  servingGram = 100, pieceGram = 45, piece_fmt = '%.1fbag',
+  calorie = 436.771,
+  fat = 10.22, cholesterol = .001962, sodium = .182771, 
+  carbohydrate = 82.126, fiber = .399, 
+  sugar = 70.103, addedSugar = 65.493, 
+  protein = 4.466)
+
+
+
+Ghirardelli_white_frappe <- \() nutrition(
+  webstaurant = '99966201', usd = 8.33/454*45, date = as.Date('2026-11-21'),
+  ghirardelli = 'iced-blended-beverages-information',
+  name = 'White Frapp\u00e9',
+  servingGram = 100, pieceGram = 45, piece_fmt = '%.1fbag',
+  calorie = 438.173,
+  fat = 10.205, cholesterol = .001962, sodium = .180911, 
+  carbohydrate = 82.856, fiber = .396, 
+  sugar = 73.043, addedSugar = 68.448, 
+  protein = 4.102,
+  suggest = list(
+    # per 90g frappe mix, on box
+    # x/2 to match pieceGram = 45
+    water = c(ice = 200/2),
+    misc_floz = (
+      Wegmans_whole_milk = 5/2
+    )
+  ))
 
 
 

@@ -1,9 +1,24 @@
 
+
+
+expect_no_error(
+  object = ls(pattern = '^Ghirardelli_.*frappe$', envir = asNamespace('sousChef.nutrition')) |>
+    lapply(FUN = \(i) eval(call(name = i))) |>
+    do.call(what = 'nutritionlist', args = _) |>
+    as.matrix() |> 
+    lapply(
+      FUN = sort_by, 
+      x = _, 
+      X = c('fat', 'sugar') |>
+        setNames(nm = _)
+    ) |>
+    print()
+)
+
 expect_no_error(
   object = nutritionlist(
     Maxwell_mochaSuisse(),
     WilliamsSonoma_mocha_hotCocoa(),
-    Ghirardelli_mochaFrappe(),
     Godiva_milk_hotCocoa(),
     Godiva_hotCocoa(),
     KingArthur_milk_hotCocoa(),
