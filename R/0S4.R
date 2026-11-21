@@ -347,7 +347,9 @@ nutrition <- \(no_eval = sys_call_name(which = -2), ...) {
     if (!length(x$alcohol)) {
       x$alcohol <- x$servingGram * x$AbV * .78927 # google abv to alcohol by weight
     }
-    x$name <- sprintf(fmt = '%s %.3g%%\U1f943', x$name, 1e2*x$AbV)
+    #x$name <- sprintf(fmt = '%s %.3g%%\U1f943', x$name, 1e2*x$AbV)
+    x$alias <- (1e2*x$AbV) |>
+      sprintf(fmt = '%.3g%%\U1f943')
     x$AbV <- NULL
   }
   
@@ -426,7 +428,7 @@ print.nutrition <- \(x, prt_label = TRUE, ...) {
     } else if (identical(x@call, quote(`<UNDEFINED>`))) {
       ''
     } else {
-      fmt_vol(x)
+      fmt_vol(x) %||% ''
     }
   ) |> cat()
   
@@ -635,9 +637,9 @@ print.nutrition <- \(x, prt_label = TRUE, ...) {
   }
   
   #suggested_ <- x |> 
-  #  as(Class = 'raw.')
+  #  as(Class = 'ingredient')
   #if (length(suggested_)) {
-  #  show(suggested_) # I have not defined a NULL \linkS4class{raw.}
+  #  show(suggested_) # I have not defined a NULL \linkS4class{ingredient}
   #  cat('\n')
   #} # user must do it manually after library(sousChef)
 

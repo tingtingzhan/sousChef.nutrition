@@ -108,7 +108,7 @@ fmt_vol <- \(x) {
   
   # @param x \linkS4class{nutrition}
   x_tsp <- x@servingTsp
-  if (!length(x_tsp)) return(character())
+  if (!length(x_tsp)) return(invisible())
   
   brick <- x@call |>
     as.character() |>

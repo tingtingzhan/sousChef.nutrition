@@ -82,7 +82,7 @@ Ghirardelli_cocoa <- \() nutrition(
 
 Ghirardelli_bittersweet <- \() nutrition(
   ghirardelli = '60-cacao-bittersweet-chocolate-premium-baking-chips-12-bags-61274cs',
-  name = 'Bittersweet, Chips, 60% Cacao', alias = '\u70d8\u57f9\u5de7\u514b\u529b',
+  name = 'Bittersweet, Chips', alias = '60%',
   webstaurant = '40842319', usd = 8.72/454*100, date = as.Date('2026-10-23'),
   servingGram = 100,
   calorie = 503.884,
@@ -113,7 +113,7 @@ Ghirardelli_semisweet_chip <- \() nutrition(
 
 
 Ghirardelli_sunrise_cocoa <- \() nutrition(
-  name = 'Sunrise, 15-17%\U1f9c8',
+  name = 'Sunrise', alias = '15-17%',
   ghirardelli = 'cocoa-powders-information',
   servingGram = 100, servingTbsp = 100/6, # packaging
   webstaurant = '40869069', usd = 10.80/454*100, date = as.Date('2026-10-23'),
@@ -124,7 +124,7 @@ Ghirardelli_sunrise_cocoa <- \() nutrition(
 
 Ghirardelli_majestic_cocoa <- \() nutrition(
   ghirardelli = 'cocoa-powders-information',
-  name = 'Majestic, 20-22%\U1f9c8',
+  name = 'Majestic', alias = '20-22%',
   webstaurant = c('40869096', '40862100'), usd = 11.40/454*100, date = as.Date('2026-10-23'),
   servingGram = 100, servingTbsp = 100/6, # packaging
   calorie = 295.311,
@@ -134,7 +134,7 @@ Ghirardelli_majestic_cocoa <- \() nutrition(
 
 Ghirardelli_superior_cocoa <- \() nutrition(
   ghirardelli = 'cocoa-powders-information',
-  name = 'Superior, 10-12%\U1f9c8',
+  name = 'Superior', alias = '10-12%',
   servingGram = 100, servingTbsp = 100/6, # packaging
   webstaurant = '40869072', usd = 10.80/454*100, date = as.Date('2026-10-23'),
   calorie = 220,

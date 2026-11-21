@@ -1,21 +1,41 @@
 
 
+
+
+
 expect_no_error(
-  object = nutritionlist(
-    Guittard_bittersweet63(),
-    Guittard_eclipse50(),
-    Guittard_solitaire54(),
-    Guittard_vanilla54(),
-    Guittard_solitaire52(),
-    Guittard_heritage39(),
-    Guittard_Dutch34milk(),
-    Guittard_31milk(),
-    Guittard_heritage32milk(),
-    Guittard_highSierra28white()
-  ) |> 
-    sort_by('fat') |>
+  object = ls(pattern = '^Guittard_', envir = asNamespace('sousChef.nutrition')) |>
+    lapply(FUN = \(i) eval(call(name = i))) |>
+    do.call(what = 'nutritionlist', args = _) |>
+    as.matrix() |> 
+    lapply(
+      FUN = sort_by, 
+      x = _, 
+      X = c('fat', 'sugar') |>
+        setNames(nm = _)
+    ) |>
     print()
 )
+
+
+expect_no_error(
+  object = ls(pattern = '^Ghirardelli_', envir = asNamespace('sousChef.nutrition')) |>
+    lapply(FUN = \(i) eval(call(name = i))) |>
+    do.call(what = 'nutritionlist', args = _) |>
+    as.matrix() |> 
+    lapply(
+      FUN = sort_by, 
+      x = _, 
+      X = c('fat', 'sugar') |>
+        setNames(nm = _)
+    ) |>
+    print()
+)
+
+
+
+
+
 
 
 

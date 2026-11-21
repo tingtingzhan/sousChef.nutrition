@@ -19,18 +19,16 @@ expect_no_error(
 
 
 expect_no_error(
-  object = nutritionlist(
-    Baileys_tiramisu_liqueur(),
-    Baileys_espressoLiqueur(),
-    Baileys_almande_liqueur(),
-    Baileys_colada_liqueur(),
-    Baileys_chocolatLuxe_liqueur(),
-    Baileys_chocolate_liqueur(),
-    Baileys_smores_liqueur(),
-    Baileys_strawberry_liqueur(),
-    Baileys_pumpkinSpice_liqueur()
-  ) |> 
-    sort_by('fat') |>
+  object = ls(pattern = '^Baileys_', envir = asNamespace('sousChef.nutrition')) |>
+    lapply(FUN = \(i) eval(call(name = i))) |>
+    do.call(what = 'nutritionlist', args = _) |> 
+    as.matrix() |> 
+    lapply(
+      FUN = sort_by, 
+      x = _, 
+      X = c('fat', 'sugar') |>
+        setNames(nm = _)
+    ) |>
     print()
 )
 

@@ -23,7 +23,7 @@ nutritionlist <- \(...) {
   sumx <- x |>
     lapply(FUN = summary)
   # [summary.nutrition]
-  # [summary.raw.]
+  # [summary.ingredient]
   # [summary.recipe]
   
   nm <- z |>
@@ -100,13 +100,20 @@ as.matrix.nutritionlist <- \(x, ...) {
 #' @importFrom charwidth row_fmt_matrix
 #' @export
 print.nutritionMatrix <- \(x, ...) {
+
+  colnames(x) <- colnames(x) |>
+    .repl()
+  
+  arr <- x |>
+    attr(which = 'arr', exact = TRUE)
+  if (length(arr)) {
+    colnames(x) <- colnames(x) |>
+      paste(arr, sep = '\n')
+  }
   
   z <- x[, colMeans(x == 0) != 1, drop = FALSE] |>
     apply(MARGIN = 2L, FUN = max_binlabel, accuracy = .1, simplify = FALSE) |>
     do.call(what = 'cbind', args = _) # to make sure not getting a 'vector'
-  
-  colnames(z) <- colnames(z) |>
-    .repl()
   
   z |>
     row_fmt_matrix() |>
