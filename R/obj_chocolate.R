@@ -61,7 +61,7 @@ Guittard_vanilla54 <- \() nutrition(
   sugar = 45, protein = 7)
 
 
-Guittard_highSierra28white <- \() nutrition(
+Guittard_highSierra28_white <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'High Sierra, White', alias = '28%',
   webstaurant = '409G9201C50', usd = 10.70/454 * 100, date = as.Date('2026-10-23'),
   # does not have accurate nutrition info
@@ -99,7 +99,7 @@ Guittard_solitaire54 <- \() nutrition(
   webstaurant = '409G0412C50CS', usd = 7.97/454 * 100, date = as.Date('2026-10-23'),
   servingGram = 100,
   calorie = 512.6,
-  water = .7, fat = 36.3, cholesterol = numeric(), sodium = .025, 
+  water = .7, fat = 36.3, sodium = .025, 
   carbohydrate = 55.9, fiber = 6.7,
   sugar = 43.7, addedSugar = 43.4, protein = 4.4)
 
@@ -110,7 +110,42 @@ Guittard_solitaire52 <- \() nutrition(
   usd = 418.99 / 5 / (10*454) * 100,
   servingGram = 100,
   calorie = 533.1,
-  water = .7, fat = 31.6, cholesterol = numeric(), sodium = .035, sugar = 47.0, addedSugar = 46.8, protein = 6.1)
+  water = .7, fat = 31.6, sodium = .035, sugar = 47.0, addedSugar = 46.8, protein = 6.1)
+
+
+
+Guittard_soieBlanche35_white <- \() nutrition(
+  brand = 'Guittard\U1f1fa\U1f1f8', name = 'Soie Blanche, White Wafers', alias = '35%',
+  webstaurant = '40G3350C13', usd = 12.31 / 454 * 100, date = as.Date('2026-11-21'),
+  servingGram = 100,
+  calorie = 590,
+  fat = 41, cholesterol = .02, sodium = .08, 
+  carbohydrate = 50, sugar = 50, 
+  protein = 6)
+
+
+
+Guittard_mystic30_white <- \() nutrition(
+  brand = 'Guittard\U1f1fa\U1f1f8', name = 'Mystic, White Wafers', alias = '30%',
+  webstaurant = '409G9270C25', usd = 9.88 / 454 * 100, date = as.Date('2026-11-21'),
+  servingGram = 100,
+  calorie = 555.3,
+  water = .7, 
+  fat = 35.8, cholesterol = .0223, sodium = .122, 
+  carbohydrate = 53.4, sugar = 53.0, addedSugar = 41.5, 
+  protein = 7.7)
+
+
+
+Guittard_cremeFrancaise31_white <- \() nutrition(
+  brand = 'Guittard\U1f1fa\U1f1f8', name = 'Creme Francaise, White Wafers', alias = '31%',
+  webstaurant = '409G3310C25', usd = 10.50 / 454 * 100, date = as.Date('2026-11-21'),
+  servingGram = 100,
+  calorie = 570,
+  fat = 39, sodium = .08, 
+  carbohydrate = 53, sugar = 53, 
+  protein = 6)
+
 
 
 # https://guittard.com/collection/baking-bars
@@ -144,10 +179,13 @@ CopperKettleCandy_darkChocolateTruffle <- \() nutrition(
   fat = 12, sodium = .055, sugar = 10, protein = 2)
 
 
-Ghirardelli_whiteChocolate <- \() nutrition(
+Ghirardelli_white <- \() nutrition(
   name = 'White Chocolate Bar',
   ghirardelli = 'premium-baking-bar-white-chocolate-12-bars-61829cs',
-  amazon = 'B01IRFB7CO', usd = 34.44/12/113.5*14,
+  # 'premium-baking-bar-white-chocolate-bar-61829' # more updated?
+  amazon = 'B01IRFB7CO', # usd = 34.44/12/113.5*14,
+  target = '26393117', # usd = 4.79/113.5*14, date = as.Date('2026-11-21'),
+  walmart = '14831473771', usd = 9.08/2/113.5*14, date = as.Date('2026-11-21'),
   servingGram = 14, 
   calorie = 80,
   fat = 4.5, sodium = .01, 
@@ -161,5 +199,15 @@ Ghirardelli_chocolateChips <- \() nutrition(
   calorie = 70, carbohydrate = 10, fat = 4, addedSugar = 8)
 
 
+Lindt_white <- \() nutrition(
+  name = 'White Chocolate Bar',
+  lindtusa = 'white-chocolate-classic-recipe-bar-6501',
+  amazon = 'B002RBOC54', usd = 62.28/12/125*29, date = as.Date('2026-11-21'),
+  servingGram = 29,
+  calorie = 160,
+  fat = 10, cholesterol = .005, sodium = .03,
+  carbohydrate = 16, sugar = 16, addedSugar = 13,
+  protein = 2
+)
 
 
