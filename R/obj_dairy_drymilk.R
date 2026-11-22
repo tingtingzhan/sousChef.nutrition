@@ -43,7 +43,10 @@ Carnation_drymilk <- \() nutrition(
   # target = 'A-13898456', #usd = 4.89/272*23, # no longer available
   servingGram = 23, 
   # servingCup = 1/4, # packaging
-  servingCup = 23/87, # actual experiment: 1 cup = 87 gram
+  servingCup = 23/87, 
+  # actual experiment: 
+  # 1 cup = 87 gram
+  # 1 Tbsp = 5 gram
   calorie = 80,
   cholesterol = .005, sodium = .095, carbohydrate = 12, sugar = 12, protein = 8,
   suggest = list(water_cup = c(c80 = 1)))

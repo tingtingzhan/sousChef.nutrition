@@ -4,10 +4,11 @@
 Ippodo_ikuyo <- \() nutrition(
   ippodoglobal = 'matcha175512', ippodojpn = 'matcha105033', ippodousa = 'ikuyo-100',
   name = 'Ikuyo', alias = '\u5e7e\u4e16\u306e\u6614',
-  servingGram = 2, servingTbsp = 2/7, # actual 1Tbsp = 7g
+  servingGram = 2, 
+  servingTbsp = 2/7, # actual 1Tbsp = 7g
   #servingTsp = 1, # packaging
-  usd = 81/100*2, jpy = 6000/100*2, # global site, shipping excluded
-  date = as.Date('2026-09-02'),
+  usd = 81/100*2, jpy = 7000/100*2, # global site, shipping excluded
+  date = as.Date('2026-11-22'),
   pros = c('a cheaper sado-grade matcha I like; use in baking, for now'))
 
 
@@ -16,7 +17,7 @@ Marukyu_tenju <- \() nutrition(
   marukyu = '1111020c1', name = 'Tenju', alias = '\u5929\u6388',
   servingGram = 2, 
   servingTbsp = 2/7, # using ikuyo/sayaka data
-  jpy = 40120/40*2, date = as.Date('2026-09-02'),
+  jpy = 105840/100*2, date = as.Date('2026-09-02'),
   pros = 'the most expensive product of Marukyu Koyama-En')
 
 
@@ -45,9 +46,10 @@ Sencha_everyday_matcha <- \() nutrition(
 Kirkland_matcha <- \() nutrition(
   costco = '4201001685', costcoBiz = '4201071303',
   name = 'Matcha\U1f375 Powder',
-  usd = 19.99/340*1.5, date = as.Date('2026-10-20'), # in-store pricing
+  usd = 19.99/340*1.5, date = as.Date('2026-10-20'), # warehouse price
   servingGram = 1.5, 
-  servingTsp = 1/2, # on package
+  # servingTsp = 1/2, # on package,
+  servingTsp = 3/4, # actual experiment: 1 Tbsp = 6g
   calorie = 5, carbohydrate = 1
 )
 
@@ -55,7 +57,8 @@ Kirkland_organic_matcha <- \() nutrition(
   costcoBiz = '4201065125',
   name = 'Matcha\U1f375 Powder, Organic',
   servingGram = 1.5, 
-  servingTsp = 1/2, # on package
+  #servingTsp = 1/2, # on package
+  servingTsp = 3/4, # using [Kirkland_matcha()]
   calorie = 5, carbohydrate = 1
 )
 

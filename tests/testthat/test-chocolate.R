@@ -4,7 +4,10 @@
 
 
 expect_no_error(
-  object = ls(pattern = '^Guittard_', envir = asNamespace('sousChef.nutrition')) |>
+  object = ls(
+    pattern = '^Guittard_', 
+    envir = asNamespace('sousChef.nutrition')
+  ) |>
     lapply(FUN = \(i) eval(call(name = i))) |>
     do.call(what = 'nutritionlist', args = _) |>
     as.matrix() |> 
@@ -19,7 +22,10 @@ expect_no_error(
 
 
 expect_no_error(
-  object = ls(pattern = '^Ghirardelli_', envir = asNamespace('sousChef.nutrition')) |>
+  object = ls(
+    pattern = '^Ghirardelli_', 
+    envir = asNamespace('sousChef.nutrition')
+  ) |>
     lapply(FUN = \(i) eval(call(name = i))) |>
     do.call(what = 'nutritionlist', args = _) |>
     as.matrix() |> 
@@ -34,7 +40,10 @@ expect_no_error(
 
 
 expect_no_error(
-  object = ls(pattern = '^Ghirardelli_.*white$|^Guittard_.*white$|^Lindt_.*white$', envir = asNamespace('sousChef.nutrition')) |>
+  object = ls(
+    pattern = '^Ghirardelli_.*white$|^Guittard_.*white$|^Lindt_.*white$|^Callebaut_.*white$', 
+    envir = asNamespace('sousChef.nutrition')
+  ) |>
     lapply(FUN = \(i) eval(call(name = i))) |>
     do.call(what = 'nutritionlist', args = _) |>
     as.matrix() |> 
