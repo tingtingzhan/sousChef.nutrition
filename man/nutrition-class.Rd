@@ -75,6 +75,8 @@ The helper function \code{\link[=nutrition]{nutrition()}} converts raw user inpu
 
 \item{\code{sodium}}{\link[base]{numeric} scalar, sodium (in grams) per serving}
 
+\item{\code{chloride}}{\link[base]{numeric} scalar, chloride (in grams) per serving}
+
 \item{\code{protein}}{\link[base]{numeric} scalar, protein (in grams) per serving}
 
 \item{\code{alcohol}}{\link[base]{numeric} scalar, alcohol (in grams) per serving}

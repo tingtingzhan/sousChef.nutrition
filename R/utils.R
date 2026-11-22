@@ -102,6 +102,16 @@ key2alias <- \(x) {
 
 
 
+sodium2chloride <- \(x) {
+  if (!length(x[['sodium']])) return(x)
+  if (length(x[['chloride']])) return(x)
+  # Gemini: Nearly all dietary chloride comes from table salt (sodium chloride, NaCl)
+  # Na = 23; Cl = 35.5
+  x$chloride <- x[['sodium']] / 23 * 35
+  return(x)
+}
+
+
 
 #' @importFrom consec cmod
 fmt_vol <- \(x) {

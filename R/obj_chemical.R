@@ -3,7 +3,8 @@
 MgCl2 <- \() nutrition(
   name = 'Magnesium Chloride MgCl\u2082', alias = '\u76d0\u5364',
   pubchem = '5360315',
-  servingGram = 1)
+  servingGram = (24.3 + 35.5*2),
+  chloride = 35.5*2)
   
 
 Ohsawa_nigari <- \() nutrition(

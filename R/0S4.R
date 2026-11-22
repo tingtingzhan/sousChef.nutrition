@@ -43,6 +43,7 @@
 #' @slot fat \link[base]{numeric} scalar, fat (in grams) per serving
 #' @slot cholesterol \link[base]{numeric} scalar, cholesterol (in grams) per serving
 #' @slot sodium \link[base]{numeric} scalar, sodium (in grams) per serving
+#' @slot chloride \link[base]{numeric} scalar, chloride (in grams) per serving
 #' @slot protein \link[base]{numeric} scalar, protein (in grams) per serving
 #' @slot alcohol \link[base]{numeric} scalar, alcohol (in grams) per serving
 # @slot portion see \linkS4class{recipe}
@@ -84,7 +85,7 @@ setClass(Class = 'nutrition', slots = c(
   water = 'numeric',
   fat = 'numeric', 
   cholesterol = 'numeric', 
-  sodium = 'numeric',
+  sodium = 'numeric', chloride = 'numeric',
   carbohydrate = 'numeric', 
   fiber = 'numeric', 
   sugar = 'numeric', 
@@ -120,6 +121,7 @@ nutrition <- \(no_eval = sys_call_name(which = -2), ...) {
   if (!length(x$call)) x$call <- call(name = 'quote', no_eval)
   
   x <- x |>
+    sodium2chloride() |>
     mergeUSD() |>
     add_brand_url(name = 'bachans', fmt = 'https://bachans.com/products/%s', text = 'Bachan\'s\U1f1fa\U1f1f8') |>
     add_brand_url(name = 'baileys', fmt = 'https://www.baileys.com/en/products/baileys-%s', text = 'Baileys\U1f1ee\U1f1ea') |>
@@ -511,7 +513,7 @@ print.nutrition <- \(x, prt_label = TRUE, ...) {
     if (x@sodium > 1) {
       sprintf(
         fmt = '%s %.1f grams %s\n',
-        'Sodium' |> 
+        'Sodium Na\u207A' |> 
           make_ansi_style('slateblue3')() |> 
           style_bold(),
         x@sodium, 
@@ -520,11 +522,33 @@ print.nutrition <- \(x, prt_label = TRUE, ...) {
     } else {
       sprintf(
         fmt = '%s %.0f milligrams %s\n', 
-        'Sodium' |> 
+        'Sodium Na\u207A' |> 
           make_ansi_style('slateblue3')() |> 
           style_bold(),
         1e3 * x@sodium, 
         fmt_perc(x, 'sodium')
+      ) |> cat()
+    }
+  }
+  
+  if (length(x@chloride)) {
+    if (x@chloride > 1) {
+      sprintf(
+        fmt = '%s %.1f grams %s\n',
+        'Chloride Cl\u207b' |> 
+          make_ansi_style('slateblue3')() |> 
+          style_bold(),
+        x@chloride, 
+        fmt_perc(x, 'chloride')
+      ) |> cat()
+    } else {
+      sprintf(
+        fmt = '%s %.0f milligrams %s\n', 
+        'Chloride Cl\u207b' |> 
+          make_ansi_style('slateblue3')() |> 
+          style_bold(),
+        1e3 * x@chloride, 
+        fmt_perc(x, 'chloride')
       ) |> cat()
     }
   }
