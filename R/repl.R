@@ -16,6 +16,7 @@
   x[x == 'carbohydrate'] <- 'carb\n\u78b3\u6c34'
   x[x == 'fiber'] <- 'fiber\n\u81b3\u98df\u7ea4\u7ef4'
   x[x == 'sodium'] <- 'Na\u207a\n\u94a0\u79bb\u5b50'
+  x[x == 'chloride'] <- 'Cl\u207b\n\u6c2f\u79bb\u5b50'
   x[x == 'cholesterol'] <- 'cholr\n\u80c6\u56fa\u9187'
   x[x == 'protein'] <- 'protein\n\u86cb\u767d\u8d28'
   x[x == 'alcohol'] <- 'alcohol\n\u4e59\u9187'
