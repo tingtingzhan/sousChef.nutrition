@@ -2,7 +2,7 @@
 #' @export
 as.double.nutrition <- \(
   x, 
-  incl_calorie = FALSE, 
+  incl_calorie = TRUE, 
   incl_usd = TRUE,
   incl_water = TRUE,
   incl_carbohydrate = TRUE, # `fiber` and `sugar` matters more

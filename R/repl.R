@@ -10,7 +10,8 @@
 #' @name repl
 #' @export
 .repl <- \(x) {
-  x[x == 'usd'] <- '\u00a2/g\n\u7f8e\u5206/\u514b'
+  x[x == 'calorie'] <- '\U1f525/gram\n\U1f525/\u514b'
+  x[x == 'usd'] <- '\u00a2/gram\n\u7f8e\u5206/\u514b'
   x[x == 'fat'] <- 'fat\n\u8102\u80aa'
   x[x == 'sugar'] <- 'sugar\n\u7cd6'
   x[x == 'addedSugar'] <- '+sugar\n\u6dfb\u52a0\u7cd6'

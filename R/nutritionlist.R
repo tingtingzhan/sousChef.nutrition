@@ -85,7 +85,6 @@ as.matrix.nutritionlist <- \(x, ...) {
   ret <- x |> 
     lapply(FUN = as, Class = 'nutrition') |> # make double sure
     lapply(FUN = as.double.nutrition, ...) |>
-    #lapply(FUN = .repl_names) |> # why error?
     do.call(what = 'rbind', args = _) # matrix
   
   class(ret) <- c('nutritionMatrix', class(ret)) |>
@@ -120,7 +119,8 @@ print.nutritionMatrix <- \(x, ...) {
   z[,id_usd] <- (x[,id_usd] * 1e2) |>
     sprintf(fmt = '%.1f')
   
-  # id_calorie: next step
+  z[,id_calorie] <- x[,id_calorie] |>
+    sprintf(fmt = '%.1f')
   
   z[,id] <- x[, id, drop = FALSE] |>
     apply(MARGIN = 2L, FUN = max_binlabel, accuracy = .1, simplify = FALSE) |>
