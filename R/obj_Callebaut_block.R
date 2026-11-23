@@ -3,7 +3,7 @@
 # search 'Callebaut+block'
 
 Callebaut_cw2_white <- \() nutrition(
-  brand = 'Callebaut', name = 'CW2, White',
+  brand = 'Callebaut', name = 'CW2, White', alias = '25.9%',
   webstaurant = '409CW2C132', usd = 11.14/454 * 100, date = as.Date('2026-11-22'),
   servingGram = 100,
   calorie = 547,
@@ -13,7 +13,7 @@ Callebaut_cw2_white <- \() nutrition(
 )
 
 Callebaut_w2_white <- \() nutrition(
-  brand = 'Callebaut', name = 'W2, White',
+  brand = 'Callebaut', name = 'W2, White', alias = '28%',
   webstaurant = '409CW2120', usd = 10/454 * 100, date = as.Date('2026-11-22'),
   servingGram = 100,
   calorie = 557,

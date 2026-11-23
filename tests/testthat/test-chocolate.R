@@ -1,8 +1,4 @@
 
-
-
-
-
 expect_no_error(
   object = ls(
     pattern = '^Guittard_', 
@@ -41,7 +37,7 @@ expect_no_error(
 
 expect_no_error(
   object = ls(
-    pattern = '^Ghirardelli_.*white$|^Guittard_.*white$|^Lindt_.*white$|^Callebaut_.*white$', 
+    pattern = '^Ghirardelli_.*white$|^Guittard_.*white$|^Lindt_.*white$|^Callebaut_.*white$|^Valrhona_.*white$', 
     envir = asNamespace('sousChef.nutrition')
   ) |>
     lapply(FUN = \(i) eval(call(name = i))) |>
@@ -55,11 +51,4 @@ expect_no_error(
     ) |>
     print()
 )
-
-
-
-
-
-
-
 

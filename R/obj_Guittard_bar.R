@@ -1,7 +1,7 @@
 
 
 
-Guittard_31milk <- \() nutrition(
+Guittard_milk <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'Milk', alias = '31%',
   webstaurant = '409G0390C50CS', usd = 9.17/454 * 100, date = as.Date('2026-10-23'),
   # does not have accurate nutrition info
@@ -12,7 +12,7 @@ Guittard_31milk <- \() nutrition(
   protein = 7)
 
 
-Guittard_Dutch34milk <- \() nutrition(
+Guittard_Dutch_milk <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'Old Dutch, Milk', alias = '34%',
   webstaurant = '409G0311C50KT', usd = 8.40/454 * 100, date = as.Date('2026-10-23'),
   servingGram = 100,
@@ -22,7 +22,7 @@ Guittard_Dutch34milk <- \() nutrition(
   protein = 6.7)
 
 
-Guittard_bittersweet63 <- \() nutrition(
+Guittard_bittersweet <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'Bittersweet', alias = '63%', 
   webstaurant = '409G0502C50KT', usd = 9.45/454 * 100, date = as.Date('2026-10-23'),
   servingGram = 100,
@@ -32,7 +32,7 @@ Guittard_bittersweet63 <- \() nutrition(
   protein = 7.3)
 
 
-Guittard_heritage39 <- \() nutrition(
+Guittard_heritage <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'Molding Heritage', alias = '39%',
   webstaurant = '409G0354C50CS', # no longer available
   usd = 302.49 / 5 / (10*454) * 100,
@@ -41,7 +41,7 @@ Guittard_heritage39 <- \() nutrition(
   water = .7, fat = 33.9, cholesterol = .0197, sodium = .066, sugar = 52.4, addedSugar = 45, protein = 7.1)
 
 
-Guittard_heritage32milk <- \() nutrition(
+Guittard_heritage_milk <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'Heritage, Milk', alias = '32%',
   webstaurant = '409G0355C50CS', usd = 8.73/454 * 100, date = as.Date('2026-10-23'),
   servingGram = 100,
@@ -52,7 +52,7 @@ Guittard_heritage32milk <- \() nutrition(
   sugar = 53.6, addedSugar = 46, protein = 7.2)
 
 
-Guittard_vanilla54 <- \() nutrition(
+Guittard_vanilla <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'French Vanilla, Dark', alias = '54%',
   webstaurant = '409G0411C50KT', usd = 9.25/454 * 100, date = as.Date('2026-10-23'),
   servingGram = 100,
@@ -62,7 +62,7 @@ Guittard_vanilla54 <- \() nutrition(
   sugar = 45, protein = 7)
 
 
-Guittard_highSierra28_white <- \() nutrition(
+Guittard_highSierra_white <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'High Sierra, White', alias = '28%',
   webstaurant = '409G9201C50', usd = 10.70/454 * 100, date = as.Date('2026-10-23'),
   # does not have accurate nutrition info
@@ -72,7 +72,7 @@ Guittard_highSierra28_white <- \() nutrition(
   carbohydrate = 59, sugar = 59, protein = 6)
 
 
-Guittard_eclipse50 <- \() nutrition(
+Guittard_eclipse <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'Eclipse, Dark', alias = '50%',
   webstaurant = '409G0431C50CS', usd = 8.80/454 * 100, date = as.Date('2026-10-23'),
   servingGram = 100,
@@ -84,7 +84,7 @@ Guittard_eclipse50 <- \() nutrition(
   protein = 5.3)
 
 
-Guittard_lustrous55 <- \() nutrition(
+Guittard_lustrous <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'Lustrous, Dark', alias = '55%',
   webstaurant = '409G0407C50CS', usd = 7.54/454 * 100, date = as.Date('2026-10-23'),
   # does not have accurate nutrition info
@@ -115,7 +115,7 @@ Guittard_solitaire52 <- \() nutrition(
 
 
 
-Guittard_soieBlanche35_white <- \() nutrition(
+Guittard_soieBlanche_white <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'Soie Blanche, White Wafers', alias = '35%',
   webstaurant = '40G3350C13', usd = 12.31 / 454 * 100, date = as.Date('2026-11-21'),
   servingGram = 100,
@@ -126,7 +126,7 @@ Guittard_soieBlanche35_white <- \() nutrition(
 
 
 
-Guittard_mystic30_white <- \() nutrition(
+Guittard_mystic_white <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'Mystic, White Wafers', alias = '30%',
   webstaurant = '409G9270C25', usd = 9.88 / 454 * 100, date = as.Date('2026-11-21'),
   servingGram = 100,
@@ -138,7 +138,7 @@ Guittard_mystic30_white <- \() nutrition(
 
 
 
-Guittard_cremeFrancaise31_white <- \() nutrition(
+Guittard_cremeFrancaise_white <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'Creme Francaise, White Wafers', alias = '31%',
   webstaurant = '409G3310C25', usd = 10.50 / 454 * 100, date = as.Date('2026-11-21'),
   servingGram = 100,

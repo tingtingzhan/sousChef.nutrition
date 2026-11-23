@@ -213,6 +213,7 @@ nutrition <- \(no_eval = sys_call_name(which = -2), ...) {
     add_brand_url(name = 'traderjoes', fmt = 'https://www.traderjoes.com/home/products/pdp/%s', text = 'Trader Joe\'s\U1f1fa\U1f1f8') |> 
     add_brand_url(name = 'tsemporium', fmt = 'https://www.tsemporium.com/en_us/xproduct/index/index/s/%s', text = 'Tak Shing Hong\u5fb7\u6210\u884c\U1f1fa\U1f1f8') |> 
     add_brand_url(name = 'twinings', fmt = 'https://twiningsusa.com/products/%s', text = 'Twinings\U1f1ec\U1f1e7') |> 
+    add_brand_url(name = 'valrhona', fmt = 'https://valrhona-collection.us/products/%s', text = 'Valrhona\U1F1EB\U1F1F7') |> 
     add_brand_url(name = 'wesson', fmt = 'https://www.purewesson.com/products/%s', text = 'Wesson\U1f1fa\U1f1f8') |> 
     add_brand_url(name = 'yaomazi', fmt = 'https://www.yaomazi.com/%s', text = '\u5e7a\u9ebb\u5b50\U1f1e8\U1f1f3') |> 
     add_brand_url(name = 'yogi', fmt = 'https://www.yogi-life.com/en-US/product/%s', text = 'Yogi\U1f1fa\U1f1f8') |> 

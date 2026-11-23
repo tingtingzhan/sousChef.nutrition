@@ -1,6 +1,7 @@
 
 Ghirardelli_white <- \() nutrition(
-  name = 'White Chocolate, Bar',
+  name = 'White Chocolate, Bar', alias = '20%',
+  # White Chocolate Contains at least 20% cocoa butter, 14% milk solids, and 3.5% milk fat. 
   ghirardelli = 'premium-baking-bar-white-chocolate-12-bars-61829cs',
   # 'premium-baking-bar-white-chocolate-bar-61829' # more updated?
   amazon = 'B01IRFB7CO', # usd = 34.44/12/113.5*14,
@@ -9,7 +10,8 @@ Ghirardelli_white <- \() nutrition(
   servingGram = 14, 
   calorie = 80,
   fat = 4.5, sodium = .01, 
-  carbohydrate = 9, sugar = 9, addedSugar = 7)
+  carbohydrate = 9, sugar = 9, addedSugar = 7,
+  url = 'https://www.ghirardelli.com/product-faqs')
 
 
 Ghirardelli_semisweet <- \() nutrition(
