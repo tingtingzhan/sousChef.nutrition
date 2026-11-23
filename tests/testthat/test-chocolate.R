@@ -46,7 +46,7 @@ expect_no_error(
     lapply(
       FUN = sort_by, 
       x = _, 
-      X = c('fat', 'sugar') |>
+      X = c('fat', 'sugar', 'usd') |>
         setNames(nm = _)
     ) |>
     print()

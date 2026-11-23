@@ -101,6 +101,10 @@ as.matrix.nutritionlist <- \(x, ...) {
 #' @export
 print.nutritionMatrix <- \(x, ...) {
 
+  id_calorie <- which(colnames(x) == 'calorie')
+  id_usd <- which(colnames(x) == 'usd')
+  id <- colnames(x) %notin% c('calorie', 'usd')
+  
   colnames(x) <- colnames(x) |>
     .repl()
   
@@ -111,11 +115,19 @@ print.nutritionMatrix <- \(x, ...) {
       paste(arr, sep = '\n')
   }
   
-  z <- x[, colMeans(x == 0) != 1, drop = FALSE] |>
+  z <- array(NA_character_, dim = dim(x), dimnames = dimnames(x))
+  
+  z[,id_usd] <- (x[,id_usd] * 1e2) |>
+    sprintf(fmt = '%.1f')
+  
+  # id_calorie: next step
+  
+  z[,id] <- x[, id, drop = FALSE] |>
     apply(MARGIN = 2L, FUN = max_binlabel, accuracy = .1, simplify = FALSE) |>
     do.call(what = 'cbind', args = _) # to make sure not getting a 'vector'
   
-  z |>
+  all0 <- (colMeans(x == 0) == 1)
+  z[, !all0, drop = FALSE] |>
     row_fmt_matrix() |>
     cat(sep = '\n')
   
