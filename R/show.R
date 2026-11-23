@@ -248,10 +248,11 @@ print.nutrition <- \(x, prt_label = TRUE, ...) {
     x@contain |>
       tolower() |>
       vapply(FUN = \(i) {
-        if (exists(i, where = asNamespace('sousChef.spice'))) {
-          eval(call(name = i), envir = asNamespace('sousChef.spice')) |> # dont use [eval_()] yet
-            format() # sousChef.spice:::format.spice, etc.
-        } else i
+        i |>
+          as(Class = 'spice') |>
+          format() 
+        # ?sousChef.spice:::format.spice; or 
+        # ?base::format.default
       }, FUN.VALUE = '') |>
       paste(collapse = ' ') |> 
       sprintf(fmt = 'Contains %s\n\n') |> 

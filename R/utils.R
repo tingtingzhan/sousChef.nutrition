@@ -24,13 +24,12 @@ key2alias <- \(x) {
   # to prevent infinite recursion
   if (xkey == as.character(x@call)) return(x)
   
-  if (exists(xkey, where = asNamespace('sousChef.spice'))) {
-    z <- eval(call(name = xkey), envir = asNamespace('sousChef.spice'))
-    if (is(z, 'spice')) {
-      x@alias <- z@alias
-    } # else do nothing
+  z <- xkey |>
+    as(Class = 'spice')
+  if (is(z, 'spice')) {
+    x@alias <- z@alias
     return(x)
-  } 
+  } # else do nothing
   
   if (xkey == 'sashimi') {
     if (!length(x@alias)) stop()

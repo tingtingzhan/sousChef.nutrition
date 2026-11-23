@@ -3,7 +3,7 @@
 
 expect_no_error(
   object = ls(pattern = '^Ghirardelli_.*frappe$', envir = asNamespace('sousChef.nutrition')) |>
-    lapply(FUN = \(i) eval(call(name = i))) |>
+    as.list() |>
     do.call(what = 'nutritionlist', args = _) |>
     as.matrix() |> 
     lapply(

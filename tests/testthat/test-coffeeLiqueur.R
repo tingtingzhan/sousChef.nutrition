@@ -20,7 +20,7 @@ expect_no_error(
 
 expect_no_error(
   object = ls(pattern = '^Baileys_', envir = asNamespace('sousChef.nutrition')) |>
-    lapply(FUN = \(i) eval(call(name = i))) |>
+    as.list() |>
     do.call(what = 'nutritionlist', args = _) |> 
     as.matrix() |> 
     lapply(
