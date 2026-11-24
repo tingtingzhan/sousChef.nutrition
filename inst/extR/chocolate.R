@@ -1,18 +1,6 @@
 
 
 
-# https://guittard.com/collection/baking-bars
-# https://guittard.com/product/baking-bars-semisweet-chocolate
-# https://guittard.com/product/baking-bars-bittersweet-chocolate
-# https://guittard.com/product/baking-bars
-
-
-
-
-# https://www.guittard.com/our-chocolate/detail/pro_kokoleka-milk
-# https://www.guittard.com/our-chocolate/detail/pro_kokoleka-semisweet
-
-
 Bouchard_dark72 <- \() nutrition(
   name = 'Dark Chocolate Napolitains', alias = '72%',
   bouchard = 'dark-chocolate-napolitains',
@@ -22,6 +10,9 @@ Bouchard_dark72 <- \() nutrition(
   calorie = 140,
   fat = 12, sugar = 8, protein = 3)
 
+
+
+
 CopperKettleCandy_darkChocolateTruffle <- \() nutrition(
   brand = 'Copper Kettle Candy Co.', 
   name = 'Dark Chocolate Truffles',
@@ -30,6 +21,4 @@ CopperKettleCandy_darkChocolateTruffle <- \() nutrition(
   servingGram = 28,
   calorie = 150,
   fat = 12, sodium = .055, sugar = 10, protein = 2)
-
-
 

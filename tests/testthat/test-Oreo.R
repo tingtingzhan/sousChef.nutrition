@@ -1,6 +1,11 @@
 
-expect_no_error(
-  object = nutritionlist(
+
+system.file('extR', 'Oreo.R', package = 'sousChef.nutrition') |>
+  source()
+
+
+expect_no_error(object = {
+  nutritionlist(
     Nabisco_waferOreo(),
     Oreo(),
     Oreo_thins(),
@@ -8,5 +13,5 @@ expect_no_error(
     Oreo_thins_lemon(),
     Oreo_thins_mint()
   ) |> print()
-)
+})
 

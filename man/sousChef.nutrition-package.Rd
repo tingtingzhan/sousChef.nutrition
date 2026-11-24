@@ -8,6 +8,9 @@
 \description{
 The S4 object 'nutrition' for package 'sousChef'.
 }
+\details{
+Chef's raw materials.
+}
 \author{
 \strong{Maintainer}: Tingting Zhan \email{tingtingzhan@gmail.com}
 

@@ -1,6 +1,15 @@
 
 
 
+# https://guittard.com/collection/baking-bars
+# https://guittard.com/product/baking-bars-semisweet-chocolate
+# https://guittard.com/product/baking-bars-bittersweet-chocolate
+# https://guittard.com/product/baking-bars
+
+
+
+
+
 Guittard_milk <- \() nutrition(
   brand = 'Guittard\U1f1fa\U1f1f8', name = 'Milk', alias = '31%',
   webstaurant = '409G0390C50CS', usd = 9.17/454 * 100, date = as.Date('2026-10-23'),

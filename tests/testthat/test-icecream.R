@@ -1,5 +1,8 @@
 
 
+system.file('extR', 'icecream.R', package = 'sousChef.nutrition') |>
+  source()
+
 expect_no_error(object = {
   nutritionlist(
     Bassetts_coffee(),

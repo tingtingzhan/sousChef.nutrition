@@ -35,10 +35,3 @@ expect_no_error(
 
 
 
-expect_no_error(
-  object = nutritionlist(
-    Starbucks_mocha(),
-    Starbucks_mochaFrappuccino(),
-    StarbucksPepsiCo_mochaFrappe()
-  ) |> print()
-) # compare drink

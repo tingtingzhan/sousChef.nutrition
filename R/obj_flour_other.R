@@ -1,6 +1,6 @@
 
 
-BobsRedMill_almondFlour <- \() nutrition(
+BobsRedMill_almondFlr <- \() nutrition(
   bobsredmill = 'almond-meal-flour',
   name = 'Almond Flour',
   servingGram = 13, servingTbsp = 2, 

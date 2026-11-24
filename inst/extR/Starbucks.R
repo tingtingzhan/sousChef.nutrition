@@ -89,15 +89,6 @@ Starbucks_matchaFrappuccino <- \() nutrition(
   caffeine = .065)
 
 
-Starbucks_matchaLatteMix <- \() nutrition(
-  brand = 'Starbucks\U1f1fa\U1f1f8', 
-  name = 'Matcha\U1f375 Latte Mix',
-  yamibuy = '25775250', usd = 10.99/4, date = as.Date('2026-10-28'),
-  pieceGram = 24,
-  calorie = 103,
-  protein = 3.4, fat = 2.8, carbohydrate = 16, sugar = 16, sodium = .13,
-  suggest = list(water = c(c85 = 180)))
-
 
 
 Starbucks_mocha <- \() nutrition(

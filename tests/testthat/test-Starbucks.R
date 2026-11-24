@@ -1,4 +1,6 @@
 
+system.file('extR', 'Starbucks.R', package = 'sousChef.nutrition') |>
+  source()
 
 
 expect_no_error(
@@ -28,4 +30,15 @@ expect_no_error(
     sort_by('sugar') |>
     print()
 )
+
+
+
+expect_no_error(
+  object = nutritionlist(
+    Starbucks_mocha(),
+    Starbucks_mochaFrappuccino(),
+    StarbucksPepsiCo_mochaFrappe()
+  ) |> 
+    print()
+) # compare drink
 

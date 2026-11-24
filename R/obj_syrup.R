@@ -12,3 +12,11 @@ TraderJoes_date_syrup <- \() nutrition(
 TraderJoes_blueAgave_syrup <- \() nutrition(
   servingGram = 44.4, sugar = 30)
 
+
+Crown_Bourbon_mapleSyrup <- \() nutrition(
+  brand = style_hyperlink(text = 'Crown Maple', url = 'https://crownmaple.store/crown-maple-bourbon-barrel-aged-organic-maple-syrup-750ml-25-fl-oz/'),
+  name = 'Maple\U1f341 Syrup, Bourbon\U1fab5', # lacks bourbon flavor!!!
+  # full bottle 1700g; empty bottle xxx
+  servingGram = 40, servingTbsp = 2, # serving_ml = 30, # (1700 - xxx) / 750 * 30
+  sodium = .005, sugar = 24)
+
