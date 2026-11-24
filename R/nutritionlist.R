@@ -119,8 +119,10 @@ print.nutritionMatrix <- \(x, ...) {
   z[,id_usd] <- (x[,id_usd] * 1e2) |>
     sprintf(fmt = '%.1f')
   
-  z[,id_calorie] <- x[,id_calorie] |>
+  x_calorie <- x[,id_calorie]
+  z[,id_calorie] <- x_calorie |>
     sprintf(fmt = '%.1f')
+  z[(abs(x_calorie) < .Machine$double.base), id_calorie] <- '-'
   
   z[,id] <- x[, id, drop = FALSE] |>
     apply(MARGIN = 2L, FUN = max_binlabel, accuracy = .1, simplify = FALSE) |>

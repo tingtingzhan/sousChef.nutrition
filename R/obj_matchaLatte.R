@@ -1,10 +1,16 @@
 
 
 
-TraderJoes_matchaLatte <- \() nutrition(
+TraderJoes_matchaLatteMix <- \() nutrition(
   traderjoes = '052512',
   name = 'Matcha\U1f375 Latte Mix',
-  servingGram = 45, servingTbsp = 5, fat = 9, sodium = .07, sugar = 17, addedSugar = 16, protein = 2)
+  usd = 4.99/5, date = as.Date('2026-11-23'),
+  servingGram = 45, servingTbsp = 5, 
+  calorie = 220,
+  fat = 9, sodium = .07, 
+  carbohydrate = 32, fiber = 2, 
+  sugar = 17, addedSugar = 16, 
+  protein = 2)
 
 
 

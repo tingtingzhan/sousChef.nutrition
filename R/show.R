@@ -224,7 +224,7 @@ print.nutrition <- \(x, prt_label = TRUE, ...) {
   if (length(x@superior)) {
     .cli_run(
       text = x@superior |> make_ansi_style('sienna')() |> style_bold(),
-      pkg = 'sousChef',
+      pkg = 'sousChef.nutrition',
       fun = x@superior
     ) |>
       paste(collapse = ', ') |>
