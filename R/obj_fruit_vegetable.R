@@ -490,11 +490,6 @@ Iberia_redkidneybean <- \() nutrition(
   #servingGram = 100 - 11.8, protein = 22.5, fat = 1.06, sugar = 2.1, sodium = .012 # fdc
   servingGram = 42, servingCup = 1/4, sodium = .005, carbohydrate = 26, sugar = 1, protein = 9)
 
-pistachio <- \() nutrition(
-  fdc = 170184L,
-  name = 'Pistachio, raw',
-  servingGram = 100, servingCup = .85, # Gemini said..
-  protein = 20.2, fat = 45.3, sugar = 7.66, sodium = .001)
 
 
 OsmanthusFragrans <- \() nutrition(

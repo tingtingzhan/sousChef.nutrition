@@ -1,22 +1,4 @@
 
-Galil_roastedChestnut <- \() nutrition(
-  brand = style_hyperlink(text = 'Galil', url = 'https://shopgalil.com/products/galil-organic-roasted-chestnuts-shelled-3-5oz-pack-of-24'),
-  name = 'Roasted Chestnut', 
-  usd = 2.99/100*50,
-  servingGram = 50, 
-  calorie = 100,
-  fat = .5, sugar = 5, protein = 2
-)
-
-
-
-SavannaOrchards_cashewAlmondPecanPistachio <- \() nutrition(
-  costco = '100312639',
-  brand = 'Savanna Orchards',
-  name = 'Honey Roasted Cashew, Almond, Pecan & Pistachio',
-  servingGram = 30, fat = 14, sodium = .09, sugar = 4, protein = 5)
-
-
 
 Greenmax_blackSesame <- \() nutrition(
   brand = style_hyperlink(text = 'Greenmax\u99ac\u7389\u5c71\U1f1f9\U1f1fc', url = 'https://www.greenmax.com.tw/product_view.php?id=62772'),
@@ -47,6 +29,19 @@ pecan <- \() nutrition(
   servingGram = 100, water = 3.52, protein = 9.17, fat = 72, sugar = 3.97)
 
 
+pistachio <- \() nutrition(
+  fdc = 170184L,
+  name = 'Pistachio, raw',
+  servingGram = 100, servingCup = .85, # Gemini said..
+  calorie = 560,
+  water = 4.37,
+  fat = 45.3, sodium = .001, 
+  carbohydrate = 27.2, sugar = 7.66, 
+  protein = 20.2)
+
+
+
+
 Kirkland_cashew <- \() nutrition(
   costco = '4000043019',
   name = 'Cashews', # unsalted
@@ -71,9 +66,10 @@ Kirkland_Brazilnut <- \() nutrition(
   cons = 'I do not like much..')
 
 
-GustoEtna_pistachio_paste <- \() nutrition(
+GustoEtna_pistachio <- \() nutrition(
   wholesaleitalianfood = 'gusto-etna-pure-pistachio-paste-3kg-tub-100-pistachio',
-  brand = 'Gusto Etna',
+  brand = 'Gusto Etna\U1f1ee\U1f1f9' |>
+    style_hyperlink(url = 'https://gustoetna.com'),
   name = '100% Pistachio Paste',
   usd = 149.4/3e3 * 30, date = as.Date('2026-11-18'),
   servingGram = 30, servingTbsp = 2,
