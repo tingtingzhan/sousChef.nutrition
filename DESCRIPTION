@@ -2,14 +2,21 @@ Package: sousChef.nutrition
 Type: Package
 Title: sousChef.nutrition
 Version: 0.1.0
-Date: 2026-11-24
+Date: 2026-11-27
 Description: The S4 object 'nutrition' for package 'sousChef'. 
 Authors@R: c(person(given = "Tingting", family = "Zhan", role = c("aut", "cre"), email = "tingtingzhan@gmail.com"))
 Language: en-US
 Encoding: UTF-8
 License: GPL-2
 Depends: R (>= 4.6)
-Imports: methods, cli (== 3.6.6), charwidth, consec, equiv4, sousChef.utils, sousChef.spice, sousChef.tool
+Imports: methods, cli (== 3.6.6), charwidth, consec, equiv4, sousChef.utils, sousChef.tool, sousChef.spice
+Remotes:
+  tingtingzhan/charwidth,
+  tingtingzhan/consec,
+  tingtingzhan/equiv4,
+  tingtingzhan/sousChef.utils,
+  tingtingzhan/sousChef.tool,
+  tingtingzhan/sousChef.spice
 Config/roxygen2/version: 8.1.1
 Config/roxygen2/markdown: TRUE
 Suggests: testthat (>= 3.0.0)
