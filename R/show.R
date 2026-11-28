@@ -40,7 +40,7 @@ print.nutrition <- \(x, prt_label = TRUE, ...) {
   
   if (length(x@water) && length(x@servingGram) && (x@water / x@servingGram > .9)) {
     x@servingGram |>
-      cmod(e2 = consec::floz, n = 2L, tol = 1e-6) |>
+      cmod(e2 = consec:::floz, n = 2L, tol = 1e-6) |>
       make_ansi_style('seagreen')() |> 
       style_bold() |>
       sprintf(fmt = 'Water Equivalency %s\n') |> 

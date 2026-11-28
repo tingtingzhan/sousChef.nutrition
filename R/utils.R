@@ -125,7 +125,7 @@ fmt_vol <- \(x) {
   
   x_tsp |>
     cmod(
-      e2 = if (brick) consec::teaspoon2 else consec::teaspoon, 
+      e2 = if (brick) consec:::teaspoon2 else consec:::teaspoon, 
       n = 3L, tol = 1e-6
     ) |>
     col_br_blue() |> 
